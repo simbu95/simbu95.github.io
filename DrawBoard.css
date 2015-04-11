@@ -1,6 +1,8 @@
 
 body{height:100%;}
+*{margin: 0px; padding: 0px; border-spacing: 0; border-collapse: collapse;}
 table.ChessBoard{
 width:100%;
 height:100%;}
-table.ChessBoard tr td.square{width:12%;height:12%;background: #0000ff;}
+table.ChessBoard tr td.square{width:12%;height:12%;background: #000000;}
+table.ChessBoard tr td.squarer{width:12%;height:12%;background: #ffffff;}
