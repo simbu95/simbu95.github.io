@@ -4,5 +4,8 @@ body{height:100%;}
 table.ChessBoard{
 width:100%;
 height:100%;}
-table.ChessBoard tr td.square{width:12%;height:12%;background: #000000;}
-table.ChessBoard tr td.squarer{width:12%;height:12%;background: #ffffff;}
+table.ChessBoard tr:nth-child(even) td.square:nth-child(even){width:12%;height:12%;background: red; background-image: url(Images/BlackRook.png); 
+background-size:contain;background-repeat: no-repeat; background-position: center;}
+table.ChessBoard tr:nth-child(even) td.square:nth-child(odd){width:12%;height:12%;background: white;}
+table.ChessBoard tr:nth-child(odd) td.square:nth-child(even){width:12%;height:12%;background: white;}
+table.ChessBoard tr:nth-child(odd) td.square:nth-child(odd){width:12%;height:12%;background: red;}
