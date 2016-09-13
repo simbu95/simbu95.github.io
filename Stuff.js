@@ -1,9 +1,4 @@
-////////////////////////////////////////////////////////////////////////////////
-// Staircase exercise                                                         //
-// Your task is to complete the model for simple stairs                       //
-// Using the provided sizes and colors, complete the staircase                //
-// and reach the Gold Cup!                                                    //
-////////////////////////////////////////////////////////////////////////////////
+
 /*global, THREE, Coordinates, $, document, window, dat*/
 
 var camera, scene, renderer;
@@ -14,6 +9,240 @@ var gridY = false;
 var gridZ = false;
 var axes = false;
 var ground = true;
+
+function HappyBirthday(){
+	var Birthday = new THREE.MeshLambertMaterial( { 
+		color: 0x3333cc//0xff6600
+	} );
+	var Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=0;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=200;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=100;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(200,50,100),Birthday);
+	Mesh.position.x=450;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(200,50,100),Birthday);
+	Mesh.position.x=450;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=350;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,300,100),Birthday);
+	Mesh.position.x=550;
+	Mesh.position.y=-150;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=700;
+	Mesh.position.y=-250;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=800;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=800;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=900;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=1050;
+	Mesh.position.y=-250;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=1150;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=1150;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=1250;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=1600;
+	Mesh.position.y=-250;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=1500;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=1400;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	var Birthday = new THREE.MeshLambertMaterial( { 
+		color: 0xff6600
+	} );
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=1900;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=2000;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=2000;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=2100;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=2250;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,50,100),Birthday);
+	Mesh.position.x=2250;
+	Mesh.position.y=100;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=2400;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(100,50,100),Birthday);
+	Mesh.position.x=2475;
+	Mesh.position.y=-75;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=2700;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(250,50,100),Birthday);
+	Mesh.position.x=2700;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=2900;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=3000;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=3100;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=3450;
+	Mesh.position.y=0;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=3350;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=3350;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=3250;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(200,50,100),Birthday);
+	Mesh.position.x=3700;
+	Mesh.position.y=-25;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(200,50,100),Birthday);
+	Mesh.position.x=3700;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=3600;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,300,100),Birthday);
+	Mesh.position.x=3800;
+	Mesh.position.y=-150;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	 
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
+	Mesh.position.x=4150;
+	Mesh.position.y=-250;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(150,50,100),Birthday);
+	Mesh.position.x=4050;
+	Mesh.position.y=-225;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,250,100),Birthday);
+	Mesh.position.x=3950;
+	Mesh.position.y=-125;
+	Mesh.position.z=0;
+	scene.add(Mesh);
+	
+
+
+}
 
 function createStairs() {
 
@@ -92,10 +321,10 @@ function init() {
 
 	// CAMERA
 	camera = new THREE.PerspectiveCamera( 45, canvasRatio, 1, 40000 );
-	camera.position.set( -700, 500, -1600 );
+	camera.position.set( 1000, -1000, 3400 );
 	// CONTROLS
 	cameraControls = new THREE.OrbitAndPanControls(camera, renderer.domElement);
-	cameraControls.target.set(0,600,0);
+	cameraControls.target.set(2100,0,0);
 
 	// Camera(2) for testing has following values:
 	// camera.position.set( 1225, 2113, 1814 );
@@ -124,7 +353,7 @@ function fillScene() {
 
 	scene.add(camera);
 
-	if (ground) {
+	/*if (ground) {
 		Coordinates.drawGround({size:1000});		
 	}
 	if (gridX) {
@@ -139,8 +368,8 @@ function fillScene() {
 	if (axes) {
 		Coordinates.drawAllAxes({axisLength:300,axisRadius:2,axisTess:50});
 	}
-	createCup();
-	var stairs = createStairs();
+	createCup();*/
+	var stairs = HappyBirthday();
 	scene.add(stairs);
 }
 //
@@ -181,11 +410,11 @@ function setupGui() {
 	};
 
 	var gui = new dat.GUI();
-	gui.add(effectController, "newGridX").name("Show XZ grid");
+	/*gui.add(effectController, "newGridX").name("Show XZ grid");
 	gui.add( effectController, "newGridY" ).name("Show YZ grid");
 	gui.add( effectController, "newGridZ" ).name("Show XY grid");
 	gui.add( effectController, "newGround" ).name("Show ground");
-	gui.add( effectController, "newAxes" ).name("Show axes");
+	gui.add( effectController, "newAxes" ).name("Show axes");*/
 }
 
 
