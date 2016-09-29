@@ -110,7 +110,7 @@ function HappyBirthday(){
 	scene.add(Mesh);
 	
 	var Birthday = new THREE.MeshLambertMaterial( { 
-		color: 0x55ff55
+		color: 0x99ff99
 	} );
 	Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
 	Mesh.position.x=1900;
