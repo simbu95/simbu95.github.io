@@ -12,7 +12,7 @@ var ground = true;
 
 function HappyBirthday(){
 	var Birthday = new THREE.MeshLambertMaterial( { 
-		color: 0x3333cc//0xff6600
+		color: 0xff0000//0xff6600
 	} );
 	var Mesh=new THREE.Mesh( new THREE.CubeGeometry(50,500,100),Birthday);
 	Mesh.position.x=0;
